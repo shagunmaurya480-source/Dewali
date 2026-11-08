@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magical Diwali Wishes ✨</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Trebuchet MS',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    color:white;
+
+    background:
+    radial-gradient(circle at top,#713b68,#27163d,#100d27);
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:18px 10px;
+    background:rgba(255,255,255,0.08);
+    border-bottom:1px solid #ffc86b;
+    box-shadow:0 0 20px #ffb347;
+}
+
+header h3{
+    color:#ffdf9e;
+    font-size:17px;
+    letter-spacing:2px;
+}
+
+.follow{
+    display:inline-block;
+    margin-top:8px;
+    padding:8px 20px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#ff8c42,#ffcf70);
+    color:#421b40;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MAIN */
+
+.container{
+    text-align:center;
+    padding:25px 15px;
+}
+
+h1{
+    color:#ffdb8c;
+    font-size:35px;
+    text-shadow:0 0 15px #ff9d32;
+    animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+    margin-top:12px;
+    color:#ffe7c2;
+    font-size:16px;
+}
+
+/* LIGHTS */
+
+.lights{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 5px;
+}
+
+.light{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#ffda65;
+    box-shadow:0 0 15px 5px #ffad33;
+    animation:blink 1s infinite alternate;
+}
+
+.light:nth-child(even){
+    animation-delay:.5s;
+}
+
+/* CARTOON */
+
+.cartoon{
+    font-size:85px;
+    margin:20px 0 5px;
+    animation:bounce 2s infinite;
+}
+
+.cartoon-text{
+    color:#ffdfa5;
+    font-size:17px;
+}
+
+/* GIFT BOX */
+
+.gift-area{
+    margin:35px auto;
+}
+
+.gift{
+    font-size:110px;
+    cursor:pointer;
+    display:inline-block;
+    filter:drop-shadow(0 0 20px #ffbd56);
+    animation:giftMove 2s infinite;
+}
+
+.instruction{
+    color:#ffe6b0;
+    margin-top:12px;
+    font-size:15px;
+}
+
+/* MAGIC */
+
+#magic{
+    display:none;
+    font-size:30px;
+    animation:magic 1s infinite alternate;
+}
+
+#envelope{
+    display:none;
+    font-size:95px;
+    cursor:pointer;
+    margin:20px auto;
+    animation:float 2s infinite;
+}
+
+#envelopeText{
+    color:#ffdf9d;
+}
+
+/* LETTER */
+
+.letter{
+    display:none;
+    max-width:500px;
+    margin:25px auto;
+    padding:25px 20px;
+
+    background:linear-gradient(145deg,#fff0d0,#ffdfae);
+    color:#733b36;
+
+    border-radius:20px;
+    border:3px solid #ffba55;
+
+    box-shadow:0 0 30px #ffb347;
+
+    animation:openLetter 1s;
+}
+
+.letter h2{
+    color:#a44729;
+    margin-bottom:18px;
+}
+
+.letter p{
+    line-height:1.9;
+    font-size:15px;
+    margin-bottom:12px;
+}
+
+.signature{
+    font-weight:bold;
+    color:#a44729;
+    margin-top:20px;
+}
+
+/* DIYAS */
+
+.diyas{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin:35px 0;
+}
+
+.diya{
+    font-size:45px;
+    animation:glow 1s infinite alternate;
+}
+
+/* CRACKERS DECORATION */
+
+.cracker{
+    position:fixed;
+    font-size:24px;
+    pointer-events:none;
+    animation:cracker 4s linear infinite;
+}
+
+.c1{top:25%;left:5%;}
+.c2{top:45%;right:5%;animation-delay:1s;}
+.c3{top:75%;left:8%;animation-delay:2s;}
+.c4{top:65%;right:8%;animation-delay:1.5s;}
+
+/* STARS */
+
+.star{
+    position:fixed;
+    color:#ffdf80;
+    animation:twinkle 2s infinite alternate;
+    pointer-events:none;
+}
+
+.s1{top:18%;left:20%;}
+.s2{top:35%;right:20%;}
+.s3{top:70%;left:30%;}
+.s4{top:85%;right:25%;}
+
+/* FOOTER */
+
+footer{
+    padding:20px;
+    text-align:center;
+    color:#ffdfaa;
+    font-size:13px;
+}
+
+/* ANIMATIONS */
+
+@keyframes glow{
+    from{filter:brightness(1);}
+    to{filter:brightness(1.5);text-shadow:0 0 20px orange;}
+}
+
+@keyframes blink{
+    from{opacity:.4;}
+    to{opacity:1;}
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
+
+@keyframes giftMove{
+    0%,100%{transform:rotate(-5deg);}
+    50%{transform:rotate(5deg) scale(1.08);}
+}
+
+@keyframes magic{
+    from{transform:scale(1);opacity:.5;}
+    to{transform:scale(1.4);opacity:1;}
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+}
+
+@keyframes openLetter{
+    from{transform:scale(.5) rotateY(90deg);opacity:0;}
+    to{transform:scale(1) rotateY(0);opacity:1;}
+}
+
+@keyframes twinkle{
+    from{opacity:.2;transform:scale(.7);}
+    to{opacity:1;transform:scale(1.3);}
+}
+
+@keyframes cracker{
+    0%{transform:translateY(0) rotate(0deg);opacity:0;}
+    50%{opacity:1;}
+    100%{transform:translateY(-100px) rotate(360deg);opacity:0;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h3>✨ A LITTLE DIWALI MAGIC ✨</h3>
+
+    <p style="margin-top:8px;color:#ffe4b2;">
+        Follow my Instagram
+    </p>
+
+    <a class="follow"
+    href="https://www.instagram.com/theminicreator480/"
+    target="_blank">
+    ♡ @theminicreator480
+    </a>
+
+</header>
+
+<!-- FLOATING DECORATIONS -->
+
+<div class="star s1">✦</div>
+<div class="star s2">✨</div>
+<div class="star s3">✧</div>
+<div class="star s4">⭐</div>
+
+<div class="cracker c1">🎆</div>
+<div class="cracker c2">🎇</div>
+<div class="cracker c3">✨</div>
+<div class="cracker c4">🎆</div>
+
+<div class="lights">
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+    <span class="light"></span>
+</div>
+
+<div class="container">
+
+    <h1>🪔 Happy Diwali 🪔</h1>
+
+    <p class="subtitle">
+        A Festival Full Of Lights, Love & Happiness ✨
+    </p>
+
+    <!-- CARTOON -->
+
+    <div class="cartoon">🐼</div>
+
+    <p class="cartoon-text">
+        Hiii! My little panda has a magical surprise for you! 🥰
+    </p>
+
+    <!-- GIFT -->
+
+    <div class="gift-area">
+
+        <div class="gift" id="gift" onclick="openGift()">
+            🎁
+        </div>
+
+        <p class="instruction" id="instruction">
+            Tap the magical gift box to open your surprise! 💝
+        </p>
+
+    </div>
+
+    <!-- MAGIC -->
+
+    <div id="magic">
+        ✨ 🌟 💫 🪄 ✨
+        <p style="font-size:17px;margin-top:15px;">
+            A little magic is coming your way...
+        </p>
+    </div>
+
+    <!-- ENVELOPE -->
+
+    <div id="envelope" onclick="openLetter()">
+        💌
+    </div>
+
+    <p id="envelopeText" style="display:none;">
+        Click the envelope to read your special wishes! 💗
+    </p>
+
+    <!-- LETTER -->
+
+    <div class="letter" id="letter">
+
+        <h2>🪔 A Special Diwali Letter 🪔</h2>
+
+        <p>
+        Dear You! 💗
+        </p>
+
+        <p>
+        Wishing you and your family a very
+        <b>Happy & Prosperous Diwali!</b> ✨
+        </p>
+
+        <p>
+        May this beautiful festival of lights
+        fill your life with endless happiness,
+        peace, love and success.
+        </p>
+
+        <p>
+        May every diya bring a new hope,
+        every sparkle bring a beautiful smile,
+        and every light remove the darkness
+        from your life. 🪔
+        </p>
+
+        <p>
+        May your dreams shine brighter than
+        the brightest stars and may you achieve
+        everything your heart wishes for.
+        </p>
+
+        <p>
+        Keep smiling, keep growing,
+        enjoy every little moment and
+        never stop believing in yourself. 🌸
+        </p>
+
+        <p>
+        Remember, life is like Diwali:
+        sometimes there are dark nights,
+        but there is always a reason
+        to shine again! ✨
+        </p>
+
+        <p>
+        Sending you lots of happiness,
+        positive vibes, sweet memories
+        and beautiful blessings.
+        </p>
+
+        <h3>🪔 HAPPY DIWALI! 🪔</h3>
+
+        <p class="signature">
+            With Lots Of Love & Light 💗<br>
+            @theminicreator480
+        </p>
+
+    </div>
+
+    <!-- DIYAS -->
+
+    <div class="diyas">
+        <span class="diya">🪔</span>
+        <span class="diya">✨</span>
+        <span class="diya">🪔</span>
+    </div>
+
+</div>
+
+<footer>
+    ✨ Spread Love • Spread Light • Spread Happiness ✨
+    <br><br>
+    Made With ♡ by @theminicreator480
+</footer>
+
+
+<script>
+
+function openGift(){
+
+    let gift = document.getElementById("gift");
+    let magic = document.getElementById("magic");
+    let instruction = document.getElementById("instruction");
+    let envelope = document.getElementById("envelope");
+    let envelopeText = document.getElementById("envelopeText");
+
+    gift.style.display = "none";
+
+    instruction.innerHTML =
+    "Yayyy! Your magical surprise is here! 💖";
+
+    magic.style.display = "block";
+
+    // Create magic sparkles
+
+    for(let i=0;i<25;i++){
+
+        let sparkle = document.createElement("div");
+
+        sparkle.innerHTML = ["✨","💖","⭐","💫"][Math.floor(Math.random()*4)];
+
+        sparkle.style.position = "fixed";
+        sparkle.style.left = Math.random()*100+"%";
+        sparkle.style.top = Math.random()*100+"%";
+        sparkle.style.fontSize = "25px";
+        sparkle.style.pointerEvents = "none";
+        sparkle.style.zIndex = "10";
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(()=>{
+            sparkle.remove();
+        },2500);
+
+    }
+
+    setTimeout(()=>{
+
+        magic.style.display = "none";
+        envelope.style.display = "block";
+        envelopeText.style.display = "block";
+
+    },2000);
+
+}
+
+
+function openLetter(){
+
+    let letter = document.getElementById("letter");
+
+    letter.style.display = "block";
+
+    document.getElementById("envelopeText").innerHTML =
+    "Surprise! A little letter full of love and blessings! 💗";
+
+    letter.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
